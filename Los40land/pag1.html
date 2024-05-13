@@ -1,174 +1,247 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-  <title>Los40Land</title>
-  <meta charset="utf-8">
-  <meta name="language" content="es">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <!-- responsive -->
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Los40Land</title>
+    <meta charset="utf-8">
+    <meta name="language" content="es">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 </head>
 
 <body>
 
+    <header>
+        <nav class="row justify-between align-center">
+            <div class="logo"> <img src="imagenes/logo.png" alt=""> </div>
+            <div class="redessociales">
+                <ul class="row justify-between">
+                    <li> <img src="imagenes/facebook.svg" alt=""></li>
+                    <li><img src="imagenes/instagram.svg" alt=""></li>
+                    <li><img src="imagenes/tiktok.svg" alt=""></li>
+                    <li> <img src="imagenes/twitter-x.svg" alt=""></li>
+                    <li><img src="imagenes/youtube.svg" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="portada">
+        <h1 id="tit" style="margin-bottom: 20px;">La experiencia VIP que <br> estabas esperando</h1>
+        <h3 id="sub" style="margin-top: 10px;">Se el primero en enterarte de las últimas novedades de tu <br> artista
+            favorito</h3>
+
+            <a href="#formulario" class="boton" id="btn-saber-mas">QUIERO SABER MÁS</a>
+    </section> <!-- portada -->
 
 
-  <header>
-    <nav class="row justify-between align-center">
-      <div class="logo"> <img src="imagenes/logo.png" alt=""> </div>
-      <div class="redessociales">
-        <ul class="row justify-between">
-          <li> <img src="imagenes/facebook.svg" alt=""></li>
-          <li><img src="imagenes/instagram.svg" alt=""></li>
-          <li><img src="imagenes/tiktok.svg" alt=""></li>
-          <li> <img src="imagenes/twitter-x.svg" alt=""></li>
-          <li><img src="imagenes/youtube.svg" alt=""></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section class="portada">
-    <h1 id="tit" style="margin-bottom: 20px;">La experiencia VIP que <br> estabas esperando</h1>
-    <h3 id="sub" style="margin-top: 10px;">Se el primero en enterarte de las últimas novedades de tu <br> artista
-      favorito</h3>
+    <section>
+        <div class="rectangulo">
 
-    <button id="btn-saber-mas" class="boton">QUIERO SABER MAS</button>
-  </section> <!-- portada -->
+            <h1 class="titulostam">+Beneficios</h1>
 
-
-  <section>
-    <div class="rectangulo">
-
-      <h1 class="titulostam">+Beneficios</h1>
-
-      <div id="beneficios">
-        <div class="separador"></div>
-        <div class="columna">
-          <div class="beneficio">
-            <h3 class="titubeneficios">Acceso exclusivo a próximos lanzamientos.</h3>
-            <p class="textobenef">Se el primero en escuchar la nueva música de los artistas del momento</p>
-          </div>
-          <div class="beneficio">
-            <h3 class="titubeneficios">Prioridad en la compra de entradas para los shows.</h3>
-            <p class="textobenef">Asegura tu lugar y no te pierdas de ningún evento.</p>
-          </div>
+            <div id="beneficios" class="benef">
+                <div class="separador"></div>
+                <div class="columna">
+                    <div class="beneficio">
+                        <h3 class="titubeneficios">Acceso exclusivo a próximos lanzamientos.</h3>
+                        <p class="textobenef">Se el primero en escuchar la nueva música de los artistas del momento</p>
+                    </div>
+                    <div class="beneficio">
+                        <h3 class="titubeneficios">Prioridad en la compra de entradas para los shows.</h3>
+                        <p class="textobenef">Asegura tu lugar y no te pierdas de ningún evento.</p>
+                    </div>
+                </div>
+                <div class="separador"></div>
+                <div class="columna">
+                    <div class="beneficio">
+                        <h3 class="titubeneficios">Recibe información exclusiva a tu mail.</h3>
+                        <p class="textobenef">Conoce antes que nadie las noticias de tus artistas preferidos, sus shows
+                            y eventos
+                        </p>
+                    </div>
+                    <div class="beneficio">
+                        <h3 class="titubeneficios">Forma parte de increíbles sorteos mensuales.</h3>
+                        <p class="textobenef">Participa por grandes premios como entradas, merch, autógrafos, entre
+                            otras cosas.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="separador"></div>
-        <div class="columna">
-          <div class="beneficio">
-            <h3 class="titubeneficios">Recibe información exclusiva a tu mail.</h3>
-            <p class="textobenef">Conoce antes que nadie las noticias de tus artistas preferidos, sus shows y eventos
-            </p>
-          </div>
-          <div class="beneficio">
-            <h3 class="titubeneficios">Forma parte de increíbles sorteos mensuales.</h3>
-            <p class="textobenef">Participa por grandes premios como entradas, merch, autógrafos, entre otras cosas.</p>
-          </div>
+    </section>
+
+    <section class="contenedor-rectangulo">
+        <div class="rectangulo lanzamientos">
+            <div class="row">
+
+                <div class="col" style="min-width: 47%;">
+                    <div class="row test1">
+                        <div class="col-img">
+                            <img src="imagenes/WhatsApp Image 2024-04-27 at 16.59.30.jpeg" alt="">
+                        </div>
+                        <div class="col-img">
+                            <img src="imagenes/WhatsApp Image 2024-04-27 at 16.58.55.jpeg" alt="">
+                        </div>
+                        <div class="col-img">
+                            <img src="imagenes/WhatsApp Image 2024-04-27 at 17.04.58.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="row test1">
+                        <div class="col-img">
+                            <img src="imagenes/WhatsApp Image 2024-04-27 at 17.15.41.jpeg" alt="">
+                        </div>
+                        <div class="col-img">
+                            <img src="imagenes/Screenshot_13.png" alt="">
+                        </div>
+                        <div class="col-img">
+                            <img src="imagenes/Screenshot_15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="titulanzamiento">Últimos lanzamientos</h1>
+                    <h5 class="sublanzamiento">Conoce la nueva música que está marcando tendencia y sorprendiendo a
+                        todos</h5>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contenedor-rectangulo">
-    <div class="rectangulo lanzamientos">
-      <div class="row">
-
-        <div class="col" style="min-width: 47%;">
-          <div class="row test1">
-            <div class="col-img">
-              <img src="imagenes/WhatsApp Image 2024-04-27 at 16.59.30.jpeg" alt="">
+    <section>
+        <div class="linea-horizontal row">
+            <div class="linea-izquierda col"></div>
+            <div class="col" id="titulo-formulario">
+                <h2>Entrevistas Los40</h2>
             </div>
-            <div class="col-img">
-              <img src="imagenes/WhatsApp Image 2024-04-27 at 16.58.55.jpeg" alt="">
-            </div>
-            <div class="col-img">
-              <img src="imagenes/WhatsApp Image 2024-04-27 at 17.04.58.jpeg" alt="">
-            </div>
-          </div>
-          <div class="row test1">
-            <div class="col-img">
-              <img src="imagenes/WhatsApp Image 2024-04-27 at 17.15.41.jpeg" alt="">
-            </div>
-            <div class="col-img">
-              <img src="imagenes/Screenshot_13.png" alt="">
-            </div>
-            <div class="col-img">
-              <img src="imagenes/Screenshot_15.png" alt="">
-            </div>
-          </div>
+            <div class="linea-derecha col"></div>
         </div>
-        <div class="col">
-          <h1 class="titulanzamiento">Últimos lanzamientos</h1>
-          <h5 class="sublanzamiento">Conoce la nueva música que está marcando tendencia y sorprendiendo a todos</h5>
+        <div id="Entrevistas" class="entrev">
+
+            <div class="columnae">
+
+                <img src="imagenes/nicki.png" alt="" style="margin-right: 80; width: 267px ; height: 390px;">
+                <img src="imagenes/louis.png" alt="" style="margin-right: 80; width: 267px; height: 390px;">
+                <img src="imagenes/dillomm.png" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+
+
+            </div>
+            <div class="columnae">
+                <img src="imagenes/ysy.png" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+                <img src="imagenes/feid.jpg" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+                <img src="imagenes/maria.png" alt="" style="margin-right: 80;width: 267px; height: 390px;">
+            </div>
         </div>
-      </div>
+    </section>
+
+
+
+
+
+
+    <!-- formulario -->
+    <div class="linea-horizontal row">
+        <div class="linea-izquierda col"></div>
+        <div class="col" id="titulo-formulario">
+            <h2>Accede a todo esto y más</h2>
+        </div>
+        <div class="linea-derecha col"></div>
     </div>
-  </section>
 
+    <div class="linea-horizontal"></div>
 
-  
-  <!-- formulario -->
-  <div class="linea-horizontal row">
-    <div class="linea-izquierda col"></div>
-    <div class="col" id="titulo-formulario">
-      <h2>Accede a todo esto y más</h2>
+    <div class="linea-horizontal"></div>
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&#10094;</span>
+        <div class="popup-content">
+            <div class="popup-text">
+                <h2>¡Muchas gracias <span id="nombre-titular"></span> por unirte a nuestra comunidad!</h2>
+                <p>Próximamente te enviaremos un mail con las últimas noticias de tu artista favorito</p>
+            </div>
+        </div>
     </div>
-    <div class="linea-derecha col"></div>
-  </div>
 
-  <div class="linea-horizontal"></div>
+    <form id="formulario" class="formulario">
+        <div>
+            <label for="nombre">Nombre:<span class="obligatorio">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Campo obligatorio" required>
+        </div>
+        <div>
+            <label for="email">Email:<span class="obligatorio">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Campo obligatorio" required>
+        </div>
+        <div class="artista-politicas">
+            <div>
+                <label for="artista">Artista favorito:</label>
+                <select type="artista" id="artista" name="artista">
+                    <option value="">Selecciona un artista</option>
+                    <option value="Nicki Nicole">Nicki Nicole</option>
+                    <option value="Feid">Feid</option>
+                    <option value="YSY A">YSY A</option>
+                    <option value="Dillon">Dillon</option>
+                    <option value="Maria Becerra">Maria Becerra</option>
+                    <option value="Louis Tomlinson">Louis Tomlinson</option>
+                </select>
+            </div>
+            <div class="politicas row">
+                <input type="checkbox" id="politicas" name="politicas" required>
+                <label for="politicas">Acepto las Políticas de Privacidad <span class="obligatorio">*</span></label>
+            </div>
+        </div>
+        <div class="button-container center">
+            <button type="submit" class="boton">QUIERO ACCEDER</button>
+        </div>
+    </form>
 
-  <div class="linea-horizontal"></div>
-  <div id="popup" class="popup">
-    <span class="close" onclick="closePopup()">&#10094;</span>
-    <div class="popup-content">
-      <div class="popup-text">
-        <h2>¡Muchas gracias <span id="nombre-titular"></span> por unirte a nuestra comunidad!</h2>
-        <p>Próximamente te enviaremos un mail con las últimas noticias de tu artista favorito</p>
-      </div>
-    </div>
-  </div>
+    <script src="./land.js"></script>
 
-  <form id="formulario" class="formulario">
-    <div>
-      <label for="nombre">Nombre:<span class="obligatorio">*</span></label>
-      <input type="text" id="nombre" name="nombre" placeholder="Campo obligatorio" required>
-    </div>
-    <div>
-      <label for="email">Email:<span class="obligatorio">*</span></label>
-      <input type="email" id="email" name="email" placeholder="Campo obligatorio" required>
-    </div>
-    <div>
-      <div>
-        <label for="artista">Artista favorito:</label>
-        <select type="artista" id="artista" name="artista">
-          <option value="">Selecciona un artista</option>
-          <option value="Nicki Nicole">Nicki Nicole</option>
-          <option value="Feid">Feid</option>
-          <option value="YSY A">YSY A</option>
-          <option value="Dillon">Dillon</option>
-          <option value="Maria Becerra">Maria Becerra</option>
-          <option value="Louis Tomlinson">Louis Tomlinson</option>
-        </select>
-      </div>
-      <div class="politicas row">
-        <input type="checkbox" id="politicas" name="politicas" required>
-        <label for="politicas">Acepto las Políticas de Privacidad <span class="obligatorio">*</span></label>
-      </div>
-      <div class="center">
-        <button type="submit" class="boton">QUIERO ACCEDER</button>
-      </div>
-  </form>
+    <!-- formulario -->
 
-  <script src="./land.js"></script>
 
-  <!-- formulario -->
+
+
+    <footer>
+        <div class="contenedor-rectangulo">
+        <section class="ff">
+            
+           
+            
+            <div class="linea-horizontal row">
+                <div class="linea-izquierda col"></div>
+                <div class="col" id="titulo-formulario">
+                    <div class=""><h4 class="titulo footer" style="font-size: 30px; font-weight: lighter; text-align: center;">Sigue a Los40Ar en </h4></div>
+                  
+                </div>
+                <div class="linea-derecha col"></div>
+            </div>
+
+            
+
+        
+        <div class="redessociales">
+            <ul class="row">
+
+                <li> <img src="imagenes/facebook.svg" alt=""></li>
+                <li><img src="imagenes/instagram.svg" alt=""></li>
+                <li><img src="imagenes/tiktok.svg" alt=""></li>
+                <li> <img src="imagenes/twitter-x.svg" alt=""></li>
+                <li><img src="imagenes/youtube.svg" alt=""></li>
+
+            </ul>
+        </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    </footer>
 
 </html>
