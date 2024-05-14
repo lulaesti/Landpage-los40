@@ -3,18 +3,6 @@ html {
 
 }
 
-.portada {
-  height: 80vh;
-  padding-top: 200px;
-  display: block;
-  background-image: url(imagenes/portada.jpg);
-  background-size: cover;
-  background-position: center;
-  line-height: normal;
-}
-
-
-
 body {
  
   background-color: #1f0c21;
@@ -23,89 +11,156 @@ body {
   overflow-x: hidden;
 }
 
-
+.portada {
+  height: 80vh;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-image: url(imagenes/portada.jpg);
+  background-size: cover;
+  background-position: center;
+  line-height: normal;
+}
 
 #tit {
-  margin: 0px 150px;
-  font-size: 80px;
+  margin: 0 10vw;
+  font-size: 5vw;
   color: #ffff;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 #sub {
-  margin: 60px 150px;
-  font-size: 32px;
+  margin: 2vw 10vw;
   color: #ffff;
+  font-size: 2.5vw;
+  margin-top: 0.5rem;
+  text-align: justify;
 }
 
 #btn-saber-mas {
-  margin: 0px 150px;
+  margin-top: 0.5rem;
+  margin: 2vw 10vw;
+  padding: 15px 30px;
+  font-size: 2.5vw;
+  display: inline-block;
+}
 
+
+.contenedor-texto {
+  text-align: center;
+}
+
+.contenedor-boton {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 414px) {
+  .portada {
+    padding: 10vh 5vw;
+  }
+
+  #tit {
+    font-size: 6vw;
+  }
+
+  #sub {
+    font-size: 3vw;
+  }
+
+  .boton {
+    font-size: 1.4rem;
+  }
 }
 
 .titulostam {
-  padding-top: 30px;
-  margin: 190px;
-  font-size: 85px;
+  padding-top: 3vw;
+  margin: 0 auto;
+  font-size: 6vw;
   font-weight: bold;
+  text-align: center;
 }
-
 
 .benef {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 4vw 0;
 }
 
 #beneficios {
-  margin: 0px 150px;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 5vw;
 }
 
 .columna {
   flex-basis: 48%;
-  margin-bottom: 150px;
- 
+  margin-bottom: 5vw;
 }
 
-
 .beneficio {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 3vw;
 }
 
 .titubeneficios {
-  font-size: 35px;
+  font-size: 3.5vw;
   font-weight: bold;
   position: relative;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 1vw;
 }
 
 .textobenef {
-  font-size: 25px;
+  font-size: 2.5vw;
   font-weight: lighter;
 }
-
-
-.beneficio p {
-  margin-top: 5px;
-}
-
-
 
 .titubeneficios:before {
   content: "";
   position: absolute;
   top: 0;
-  left: -15px;
-  width: 4px;
-  height: 40px;
+  left: -1vw;
+  width: 0.3vw;
+  height: 4vw;
   background-color: #FDCA2E;
 }
+
+.separador {
+  width: 0.3vw;
+  height: 100%;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .columna {
+    flex-basis: 100%;
+  }
+
+  .titulostam {
+    font-size: 8vw;
+  }
+
+  .titubeneficios {
+    font-size: 5vw;
+  }
+
+  .textobenef {
+    font-size: 3vw;
+  }
+
+  .separador {
+    display: none;
+  }
+}
+
 
 #titulo-formulario {
   text-align: center;
@@ -172,8 +227,9 @@ body {
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
+  margin-top: 2rem;
   padding: 20px 20px;
-  font-size: 18px;
+  font-size: 1.4rem;
   background-color: #FDCA2E;
   color: #1f0c21;
   border: none;
@@ -277,7 +333,7 @@ body {
 
 .redessociales ul {
   list-style: none;
-  vertical-align: top;
+  display: flex;
   gap: 1.4rem;
   justify-content: center;
 }
@@ -289,50 +345,102 @@ body {
 
 .redessociales ul img {
   height: 40px;
-
 }
 
 .align-center {
   align-items: center;
-
 }
 
 header nav {
-  margin: 0px 60px;
+  margin: 0px 20px;
+}
+
+@media screen and (max-width: 576px) {
+  header nav {
+    margin: 0px;
+  }
+
+  .logo img {
+    max-width: 100px;
+  }
+
+  .redessociales ul {
+    gap: 0.8rem;
+    padding: 0 10px;
+  }
+
+  .redessociales ul img {
+    height: 30px;
+  }
 }
 
 .lanzamientos img {
-  height: 150px;
-  width: 150px;
+  height: 10vw;
+  width: 10vw;
+  margin-bottom: 2vw;
 }
 
 .titulanzamiento {
-  padding-top: 30px;
-  font-size: 75px;
+  font-size: 3.5vw;
   font-weight: bold;
 }
 
 .lanzamientos {
-  padding: 0px 150px;
+  padding: 20 20px;
 }
 
 .sublanzamiento {
-  font-size: 25px;
-  font-weight: lighter
+  font-size: 2vw;
+  font-weight: lighter;
 }
 
 .test1 {
-  width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
 }
 
+.col {
+  flex-basis: 50%;
+  margin-top: 3vw;
+}
 
+.col-img {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
+.col-img img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2vw;
+}
+
+.col-texto {
+  flex: 1;
+}
 
 .artista-politicas {
   display: flex;
   flex-direction: column;
 }
 
+@media screen and (max-width: 576px) {
+  .lanzamientos {
+    flex-direction: column;
+  }
+  
+  .col-img,
+  .col-texto {
+    margin-right: 0;
+  }
+
+  .col-img {
+    margin-bottom: 2vw;
+  }
+}
 
 @media screen and (max-width: 576px) {
   header {
@@ -374,8 +482,6 @@ header nav {
 }
 
 
-
-
 .columnae{
   
   margin-bottom: 150px;
@@ -383,33 +489,20 @@ header nav {
   margin-top: 40px;
   margin-right: 150px;
   text-align: center;
-
- 
 }
-
 
 .politicas{
   color: #B99A3C;
 }
 
-
-
 .rectangulos {
   background-color: #180c1b;
-  
-  
+   
 }
-
-
-
-
-
 
 .ff{
   background-color: #180c1b;
 }
-
-
 
 .titulofooter{
   font-size: 24px;
